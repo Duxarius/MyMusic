@@ -17,43 +17,6 @@ MyMusic is a Windows desktop music player focused on a local, managed music libr
 - Configurable managed-library location
 - Installer and uninstaller with optional preservation of user data
 
-## Requirements
-
-To build MyMusic:
-
-- Windows 11 x64
-- .NET 10 SDK
-- Windows App SDK dependencies restored through NuGet
-
-To build the installer, install **Inno Setup 6** as well.
-
-## Build and run from source
-
-From the repository root:
-
-```powershell
-dotnet restore MyMusic.csproj
-dotnet build MyMusic.csproj -c Debug -p:Platform=x64
-dotnet run --project MyMusic.csproj -c Debug -p:Platform=x64
-```
-
-## Build the V1 installer
-
-Run:
-
-```text
-Build-V1-Installer.bat
-```
-
-The script publishes a self-contained `win-x64` build, verifies the WinUI resource index (`resources.pri`), and invokes Inno Setup 6.
-
-The resulting installer is written to:
-
-```text
-Installer\Output\MyMusic-Setup-v1.0.0.exe
-```
-
-The generated `publish` directory and installer output are intentionally ignored by Git.
 
 ## User data
 
@@ -85,10 +48,6 @@ MyMusic/
 ├── MyMusic.csproj       .NET project
 └── Build-V1-Installer.* Installer build scripts
 ```
-
-## CI
-
-GitHub Actions performs a Windows x64 Release build on pushes and pull requests to `main`. Installer creation remains a local release step for now.
 
 ## License
 
