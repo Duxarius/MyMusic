@@ -1,0 +1,55 @@
+# .NET / Visual Studio build output
+bin/
+obj/
+publish/
+artifacts/
+
+# Installer output
+Installer/Output/
+
+# Visual Studio / VS Code / Rider
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+_ReSharper*/
+*.DotSettings.user
+
+# Test / coverage output
+TestResults/
+coverage/
+*.coverage
+*.coveragexml
+
+# NuGet
+*.nupkg
+*.snupkg
+packages/
+
+# Logs and diagnostics
+*.log
+startup-crash.log
+
+# OS-generated files
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Local MyMusic user data (should never be committed)
+mymusic.db
+library-location.txt
+recent-edits.json
+settings.json
+Library/
+
+# Secrets / local environment overrides
+.env
+.env.*
+!.env.example
+*.pfx
+*.p12
+*.key
+*.pem
