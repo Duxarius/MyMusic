@@ -2,7 +2,6 @@
 
 MyMusic is a Windows desktop music player focused on a local, managed music library with a modern WinUI 3 interface.
 
-> **Development status:** V1.0 is currently being stabilized. This repository is intended to remain private until the release build and installer have been fully tested.
 
 ## Features
 
