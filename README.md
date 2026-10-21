@@ -51,4 +51,8 @@ MyMusic/
 
 ## License
 
-No open-source license has been selected yet. While this repository is private, all rights are reserved. Choose and add a license before making the source repository public if you intend to distribute it as open source.
+MyMusic is free and open-source software licensed under the **GNU General Public License v3.0 (GPLv3)**.
+
+You may use, study, modify, and redistribute MyMusic under the terms of the GPLv3. If you distribute a modified version or other GPL-covered derivative work, you must provide the corresponding source code under the GPLv3 as required by the license.
+
+See the [`LICENSE`](LICENSE) file for the full license text.

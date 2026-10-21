@@ -2,6 +2,12 @@ $ErrorActionPreference = 'Stop'
 $root = Split-Path -Parent $MyInvocation.MyCommand.Path
 Set-Location $root
 
+$licensePath = Join-Path $root "LICENSE"
+if (-not (Test-Path $licensePath)) {
+  throw "GPLv3 LICENSE file was not found at: $licensePath. Refusing to build a distributable installer without the license."
+}
+Write-Host "GPLv3 license OK: $licensePath"
+
 Write-Host "Publishing MyMusic v1.0.0 (Release, win-x64, self-contained)..."
 if (Test-Path "$root\publish") { Remove-Item "$root\publish" -Recurse -Force }
 dotnet restore "$root\MyMusic.csproj"
